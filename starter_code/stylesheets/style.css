@@ -8,3 +8,119 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+* {
+    margin: 0px; padding: 0px; 
+}
+
+html {
+    font-family:'Open Sans', sans-serif;
+    font-size: 16px;
+    }
+
+.c-nav-primary {
+   display: block;
+   width: 100%;
+   padding-left: 10%;
+   padding-right: 10%;
+   height: 80px;
+   background-color: purple;
+   border-bottom: none;
+   top: 0;
+   position: absolute;
+   justify-content: space-between;
+   align-items: center;  
+ }
+
+ .c-slacklogo {
+   display: flex;
+   align-items: center;
+   width: 100%;
+   line-height: inherit;
+   flex-direction: row;
+   }
+   .imgslack {
+   height: 60%;
+   width: 100px;
+   margin-top: 10px;
+   }
+   .c-slacklogo > ul {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    margin-top: 10px;
+   }
+.c-slacklogo > ul > li {
+    text-decoration: none;
+    list-style: none;
+    }
+    .c-slacklogo > ul > li > a {
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px 0px 20px;
+        margin-top: 10px;
+    }
+.nav-icons {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 10px;
+   }
+
+   .nav-icons > ul {
+    display: flex;
+    flex-direction: row-reverse;
+    text-decoration: none;
+    margin-top: 10px;
+   }
+.nav-icons ul > li > a {
+    text-decoration: none;
+    flex-direction: row-reverse;
+    color: white;
+    padding: 10px 20px 0px 20px;
+    margin-top: 10px;
+}
+
+/* iteration 1 */
+@media mobile screens (width < 768px) {
+    body {
+    flex-direction: column;
+    }
+}
+
+/* iteration 2 */
+@media small screens (width > 768px and width < 1024px) {
+    main {
+        align-items: flex-end;
+    }
+    
+    section {
+        display: flexbox;
+    flex-direction: row;
+    }
+    footer {
+        flex-direction: row;
+    }
+}
+
+    /* iteration 3 */
+    @media medium screens (width > 1024px and width < 1440px) {
+    nav {
+    display: inline;
+    ::content;
+    }
+    
+    main {
+    display: table-column;
+    }
+    
+    section {
+    display: flexbox;
+    flex-direction: row;
+        }
+    footer {
+        flex-direction: row;
+    }
+}
+
